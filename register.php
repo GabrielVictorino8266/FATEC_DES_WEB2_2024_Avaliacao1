@@ -15,12 +15,12 @@ if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 'coordenacao'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Requests Form </title>
+    <title>Register Requests Form</title>
 </head>
 <body>
     <h1>Register Request Form</h1>
 
-    <form action="dashboard_admin.php" method="POST">
+    <form action="ended_register.php" method="POST">
         <label for="laboratory">Laboratory:</label><br>
         <select name="laboratory" id="laboratory">
             <option value="default-lab" selected>Choose a laboratory</option>
