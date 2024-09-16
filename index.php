@@ -15,7 +15,7 @@ if(isset($_SESSION['user_id']) && isset($_SESSION['user_type'])){
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     if(isset($_POST['register'])){
-        $username = $_POST['username'];
+        $username = $_POST['username']; 
         $password = $_POST['password'];
 
         $users = [
@@ -24,8 +24,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         ];
     }
 
-    if(isset($_SESSION['username']) && isset($_SESSION['password'])){
-        $_SESSION['user_id'] = $_SESSION['username'];
+    if(isset($users[$username]) && isset($users[$password])){
+        $_SESSION['user_id'] = $username;
         if($_SESSION['user_id'] == 'coordenacao'){
             header('location: dashboard_admin.php');
             exit;
@@ -36,14 +36,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         }
     }
 }
-
-
-
 ?>
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +49,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 <body>
     <h1>Login no Sistema</h1>
 
-    <form action="login.php" method="POST">
+    <form action="" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username"><br><br>
         
