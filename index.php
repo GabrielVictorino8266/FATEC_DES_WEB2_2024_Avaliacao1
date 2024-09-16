@@ -48,16 +48,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 </head>
 <body>
     <h1>Login no Sistema</h1>
-
+    
+    
     <form action="" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username"><br><br>
         
         <label for="password">Password: </label>
         <input type="password" name="password" id="password"><br><br>
-
+        
         <button type="submit" name="register">Login</button>
-
     </form>
+    
+    <h2>Not Logged?</h2>
+    <p>If you want to see all register access right here...</p>
+    <a href="all_requests.php">All Requests</a>
 </body>
 </html>
