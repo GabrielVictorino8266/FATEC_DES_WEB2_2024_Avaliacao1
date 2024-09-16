@@ -1,5 +1,41 @@
 <?php
+session_set_cookie_params(['httponly' => true]);
+
 session_start();
+
+if(isset($_SESSION['user_id']) && isset($_SESSION['user_type'])){
+    if($_SESSION['user_id'] == 'admin'){
+        header('location: dashboard_admin.php');
+    }
+    if($_SESSION['user_id'] == 'tecnico'){
+        header('location: dashboard_tecnico.php');
+    }
+    exit;
+}
+
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if(isset($_POST['register'])){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $users = [
+            'coordenacao' => 'coordenacao',
+            'tecnico' => 'tecnico'
+        ];
+    }
+
+    if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+        $_SESSION['user_id'] = $_SESSION['username'];
+        if($_SESSION['user_id'] == 'coordenacao'){
+            header('location: dashboard_admin.php');
+            exit;
+        }
+        else if($_SESSION['user_id'] == 'tecnico'){
+            header('location: dashboard_tecnico.php');
+            exit;
+        }
+    }
+}
 
 
 
@@ -23,7 +59,7 @@ session_start();
         <label for="password">Password: </label>
         <input type="password" name="password" id="password"><br><br>
 
-        <button type="submit">Login</button>
+        <button type="submit" name="register">Login</button>
 
     </form>
 </body>
