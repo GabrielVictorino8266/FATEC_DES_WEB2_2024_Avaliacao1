@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-echo $_SESSION['user_id'];
-
 if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 'coordenacao'){
     echo "User not loged or not authorized";
     header('location: index.php');

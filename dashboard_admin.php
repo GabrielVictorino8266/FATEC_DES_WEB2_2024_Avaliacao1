@@ -39,7 +39,7 @@ function view_all_occurriences(){
 <body>
     
     <a href="logout.php">Log Out</a>
-
+    <a href="register.php">Register New Request</a>
     <h1>dashboard_admin</h1>
     <form action="" method="post">
         <button type="submit" name="dsm_occurriences">Show just DSM occuriences</button>
