@@ -14,8 +14,18 @@ if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 'coordenacao'){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Requests Form</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<nav class="navbar">
+        <p class="project-name">Request Fatec System</p>
+        <div>
+            <a href="logout.php">Log Out</a>
+        </div>
+        
+    </nav>
+<div class="body-personalized">
     <h1>Register Request Form</h1>
 
     <form action="ended_register.php" method="POST">
@@ -40,7 +50,8 @@ if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 'coordenacao'){
             <option value="GE">GE</option>
         </select><br><br>
 
-        <button type="submit" name="register-request">Register Request</button>
+        <button id="register-btn" type="submit" name="register-request">Register Request</button>
     </form>
+</div>
 </body>
 </html>

@@ -7,6 +7,13 @@
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
+.body-personalized{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .project-name{
     font-size: 18px;
     font-weight: bold;
@@ -42,6 +49,17 @@
 
 label{
     font-size: 16px;
+    width: 150px;
+}
+
+select{
+    font-size: 16px;
+    width: 200px;
+}
+
+input[type="date"]{
+    font-size: 14px;
+    width: 200px;
 }
 
 label:hover{
@@ -96,6 +114,8 @@ input:focus{
     padding: 5px;
 }
 
+
+
 /* Buttons To List */
 .all_occurriences{
     margin: 20px;
@@ -114,10 +134,11 @@ input:focus{
     color: #fff;
 }
 
-.all_occurriences-content{
-    size: 16px;
+.all_occurrences_content{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
     border-radius: 20px;
-    background-color: #5a545432;
 }
 
 #non-logged-users{
@@ -130,4 +151,73 @@ input:focus{
     align-items: center;
     flex-direction: column;
     margin-top: 20px
+}
+
+
+/* H1 Name Screen */
+.screen_name{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Dashboard */
+.dash-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.dash-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.dash-buttons:hover{
+    gap: 20px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #5a545432;
+    transition: 0.6s;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+
+/*Request Form*/
+
+#register-btn{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+#register-btn:hover{
+    gap: 20px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #5a545432;
+    transition: 0.6s;
+    border: 1px solid rgba(0, 0, 0, 0.71);
 }

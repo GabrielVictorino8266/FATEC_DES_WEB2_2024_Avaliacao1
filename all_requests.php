@@ -18,13 +18,17 @@ function view_all_occurriences(){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <p class="project-name">Request Fatec System</p>
+        <a href="index.php">Go back to index</a>
+    </nav>
     <h1 id="non-logged-users">All Requests for non logged Users</h1>
     <div id="all_requests">
         <form action="" method="post">
             <button class="all_occurriences" type="submit" name="all_occurriences">Show just ALL occuriences</button>
         </form>
     </div>
-    <div class="all_occurrencies_content">
+    <div class="all_occurrences_content">
         <?php
             if(isset($_POST['all_occurriences'])){
                 view_all_occurriences();
