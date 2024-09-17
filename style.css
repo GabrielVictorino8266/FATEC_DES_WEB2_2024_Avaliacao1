@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.project-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title_page{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+    background-color: #5a54540e;
+    padding: 30px;
+}
+
+label{
+    font-size: 16px;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+button{
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+button:hover{
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+    background-color: #5a545432;
+    transition: 0.6s;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: #5a545432;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #3531319e;
+    transition: 0.8s;
+
+}
+
+input{
+    border: 1px solid rgba(30, 28, 28, 0.81);
+    margin: 5px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+input:focus{
+    transition: 0.8s;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Buttons To List */
+.all_occurriences{
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+    width: 100px;
+}
+
+.all_occurriences:hover{
+    transition: 0.8s;
+    padding: 10px;
+    height: auto;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.204);
+    background-color: 1px solid rgb(22, 5, 5);
+    color: #fff;
+}
+
+.all_occurriences-content{
+    size: 16px;
+    border-radius: 20px;
+    background-color: #5a545432;
+}
+
+#non-logged-users{
+    text-align: center;
+}
+
+#all_requests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px
+}
