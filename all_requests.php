@@ -1,9 +1,11 @@
 <?php 
 function view_all_occurriences(){
     if(file_exists("GE.txt") && file_exists("DSM.txt")){
-        $content_dsm = file_get_contents("GE.txt");
+        $content_dsm = file_get_contents("DSM.txt");
         $content_ge = file_get_contents("GE.txt");
-        echo nl2br($content_ge . $content_dsm);
+        echo nl2br(htmlspecialchars($content_ge));
+        echo "<br>";
+        echo nl2br(htmlspecialchars($content_dsm));
     }
 }
 ?>
